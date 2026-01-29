@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backstage Ninja Tools — PowerPoint Tools for Live Events</title>
+    <meta name="description" content="Backstage Ninja Tools gives live events graphics operators a set of no-nonsense PowerPoint add-ins to fix missing fonts, tame speaker notes, and export show-ready video — so the deck behaves when the room is full and the clock is loud.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Backstage Ninja Tools — PowerPoint Tools for Live Events">
+    <meta property="og:description" content="Backstage Ninja Tools gives live events graphics operators a set of no-nonsense PowerPoint add-ins to fix missing fonts, tame speaker notes, and export show-ready video — so the deck behaves when the room is full and the clock is loud.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jon-ops.github.io/backstage-ninja-tools/">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Backstage Ninja Tools",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Windows",
+      "description": "Backstage Ninja Tools gives live events graphics operators a set of no-nonsense PowerPoint add-ins to fix missing fonts, tame speaker notes, and export show-ready video — so the deck behaves when the room is full and the clock is loud.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GBP",
+        "url": "https://backstageninjatools.lemonsqueezy.com/"
+      }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --bg-dark: #0a0a0a;
+            --bg-card: #1a1a1a;
+            --border-color: #333;
+            --text-primary: #e8e8e8;
+            --text-secondary: #a0a0a0;
+            --accent: #00d4aa;
+            --accent-hover: #00ffcc;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 0 3rem;
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .subhead {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            line-height: 1.5;
+        }
+        
+        /* Badges */
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            white-space: nowrap;
+        }
+        
+        /* CTA Buttons */
+        .cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 4rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: all 0.2s ease;
+            border: 2px solid;
+        }
+        
+        .btn-primary {
+            background: var(--accent);
+            color: #000;
+            border-color: var(--accent);
+        }
+        
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            border-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border-color: var(--border-color);
+        }
+        
+        .btn-secondary:hover {
+            border-color: var(--text-primary);
+            transform: translateY(-2px);
+        }
+        
+        .secondary-link {
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        .secondary-link a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+        
+        .secondary-link a:hover {
+            border-bottom-color: var(--accent);
+        }
+        
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+        
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+        }
+        
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .card ul li {
+            padding: 0.5rem 0;
+            color: var(--text-secondary);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .card ul li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 0 2rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem 1rem;
+            }
+            
+            .hero {
+                padding: 2rem 0 2rem;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Backstage Ninja Tools</h1>
+            <p class="subhead">
+                Backstage Ninja Tools gives live events graphics operators and pre-production a set of no-nonsense PowerPoint add-ins that: Flags missing fonts, scans images and media, formats and exports speaker notes, collects assets, exports slides at any resolution, exports slides as video at any resolution and movs., and much much more.
+            </p>
+            
+            <div class="badges">
+                <span class="badge">PowerPoint 365 (Windows)</span>
+                <span class="badge">Live Events / Conferences / Awards</span>
+                <span class="badge">Fonts • Speaker Notes • Exports</span>
+                <span class="badge">Backstage Reality Tools</span>
+            </div>
+            
+            <div class="cta-group">
+                <a href="https://backstageninjatools.lemonsqueezy.com/" class="btn btn-primary">Buy / Download</a>
+                <a href="https://github.com/jon-ops/backstage-ninja-tools" class="btn btn-secondary">GitHub Repo</a>
+            </div>
+            
+            <p class="secondary-link">Go straight to <a href="https://backstageninjatools.lemonsqueezy.com/checkout/buy/a3675896-2153-4185-b3ee-f4cd32090f93">checkout</a></p>
+        </section>
+        
+        <!-- Grid Sections -->
+        <div class="grid">
+            <!-- Box 1 -->
+            <div class="card">
+                <h2>What It Does</h2>
+                <ul>
+                    <li>Font checks — see what fonts are used and what's missing</li>
+                    <li>Speaker notes helpers — readable and predictable on-site</li>
+                    <li>Show-ready exports — assets not cooked by Office</li>
+                    <li>Backstage utilities — small tools that remove big stress</li>
+                </ul>
+            </div>
+            
+            <!-- Box 2 -->
+            <div class="card">
+                <h2>Who It's For</h2>
+                <ul>
+                    <li>Graphics ops and slide wranglers</li>
+                    <li>Show callers and tech producers</li>
+                    <li>Teams running PPT into Barco / Watchout / OBS / Resolume</li>
+                    <li>Anyone sick of "it looked fine on my laptop"</li>
+                </ul>
+            </div>
+            
+            <!-- Box 3 -->
+            <div class="card">
+                <h2>Why It Exists</h2>
+                <ul>
+                    <li>PowerPoint is great… until it isn't</li>
+                    <li>720p defaults, missing fonts, mushy exports, weird notes</li>
+                    <li>Tools that earn their place in the rack</li>
+                </ul>
+            </div>
+            
+            <!-- Box 4 -->
+            <div class="card">
+                <h2>Get Indexed Faster</h2>
+                <ul>
+                    <li>Add page to Google Search Console</li>
+                    <li>Post link in LinkedIn / GitHub README / Groups</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            Built by a working live events graphics operator — not a committee, not a SaaS, just tools that earn their keep.
+        </footer>
+    </div>
+</body>
+</html>
