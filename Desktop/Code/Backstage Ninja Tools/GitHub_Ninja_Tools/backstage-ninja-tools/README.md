@@ -27,13 +27,22 @@ Instead, it acts as:
 Backstage Ninja Tools currently include a set of focused utilities designed to solve common live-events PowerPoint problems, including:
 
 - **Font Checker** — scan a presentation to see which fonts are used and identify missing fonts before show day  
-- **Speaker Notes tools** — clean up, format, and manage notes so presenters can actually read them on-site  
+- **Ninja Notes Splitter** — split long speaker notes into clean, readable pages without duplicating slides  
+- **Crack Chart** — convert PowerPoint charts into fully editable shapes for proper design control  
 - **Slide and asset exports** — export slides, images, and video at proper resolutions and frame rates for live playback  
 - **Media and asset inspection** — identify and collect images, video, and other embedded content used in a deck  
 - **Live-events utilities** — small, practical tools that reduce last-minute surprises and operator stress  
 
 A current overview of available tools can always be found at:  
 https://backstageninjatools.lemonsqueezy.com/
+
+---
+
+## Professional Support
+
+Need help with live event graphics or professional autocue?  
+We regularly collaborate with experienced operators at:  
+https://www.cued-up.com/
 
 ---
 
